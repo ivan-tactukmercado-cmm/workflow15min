@@ -3,8 +3,8 @@
   <bpmn2:collaboration id="_0CA581A9-0B61-47E5-814A-3A764A20F8EB" name="Default Collaboration">
     <bpmn2:participant id="_994CB41A-3B45-4797-999C-8B5D52A17D49" name="Pool Participant" processRef="Untitled" />
   </bpmn2:collaboration>
-  <bpmn2:interface id="_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_ServiceInterface" name="" implementationRef="">
-    <bpmn2:operation id="_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_ServiceOperation" name="" implementationRef="">
+  <bpmn2:interface id="_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_ServiceInterface" name="myname" implementationRef="">
+    <bpmn2:operation id="_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_ServiceOperation" name="myname2" implementationRef="">
       <bpmn2:inMessageRef>_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_InMessage</bpmn2:inMessageRef>
       <bpmn2:outMessageRef>_CC49981C-BC04-43A2-A624-3BF1C42B2BFD_OutMessage</bpmn2:outMessageRef>
     </bpmn2:operation>
