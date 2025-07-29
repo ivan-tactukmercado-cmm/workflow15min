@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_C1058F60-BECC-4E9C-A61C-0A51F07F2EA2" id="_9C16EDB0-05F7-44CB-AD62-B84BACE27FC6" name="DMN_E0A20C30-EB2C-49AA-8EBD-424AA077A3BA" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+  <decision name="Suspended" id="_E2A5E4FC-7464-49AB-AB54-6F319DE6348A">
+    <variable name="Suspended" id="_2532C27A-8EDA-46D8-B4D3-82EE51C38F4F" />
+    <informationRequirement id="_5FB29B7B-1C65-418F-A31A-DBC3AB2714C5">
+      <requiredInput href="#_1601AD06-41E9-4550-91B3-210327668E55" />
+    </informationRequirement>
+    <informationRequirement id="_41644BCA-60BB-4E8D-B9FB-2FFC6F7D81E8">
+      <requiredDecision href="#_4E68F7E2-0DDF-476C-9C4B-76690F73D889" />
+    </informationRequirement>
+  </decision>
+  <decision name="Fine" id="_4E68F7E2-0DDF-476C-9C4B-76690F73D889">
+    <variable name="Fine" id="_D94EA041-C19E-4674-A7DC-415C5A5C3699" />
+    <informationRequirement id="_EC91E90D-0A04-40D2-B6FA-E46ADD56E2C5">
+      <requiredInput href="#_4E2B4B21-5981-4D10-B9D0-318C1AB31F5E" />
+    </informationRequirement>
+  </decision>
+  <inputData name="Driver" id="_1601AD06-41E9-4550-91B3-210327668E55">
+    <variable name="Driver" id="_BCC52761-0690-453D-A588-2AC9EBA71502" />
+  </inputData>
+  <inputData name="Violation" id="_4E2B4B21-5981-4D10-B9D0-318C1AB31F5E">
+    <variable name="Violation" id="_03E6B6D9-8E6C-43BB-BABC-3E9A1B5F2FEF" />
+  </inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_A1A6BE77-70FF-4C1E-AE79-448E440B7AB9" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths />
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_931A7666-112C-4025-867E-509DE8B27376" dmnElementRef="_1601AD06-41E9-4550-91B3-210327668E55" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="180" y="140" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_305940D4-8174-487D-9E87-7C5A967ECB3C" dmnElementRef="_E2A5E4FC-7464-49AB-AB54-6F319DE6348A" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="380" y="0" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_9EF505FE-E098-470C-8C40-00C4C6F6CAF5" dmnElementRef="_4E68F7E2-0DDF-476C-9C4B-76690F73D889" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="560" y="160" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_0B7F9821-C959-43BE-A235-D184FCEC6E9F" dmnElementRef="_4E2B4B21-5981-4D10-B9D0-318C1AB31F5E" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="760" y="300" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_455CC11A-CA5F-4F0B-BA5A-20869BD9AA51" dmnElementRef="_5FB29B7B-1C65-418F-A31A-DBC3AB2714C5" sourceElement="_931A7666-112C-4025-867E-509DE8B27376" targetElement="_305940D4-8174-487D-9E87-7C5A967ECB3C">
+        <di:waypoint x="260" y="180" />
+        <di:waypoint x="380" y="40" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_AF2933A0-97F5-4C79-85C6-D2A683347077" dmnElementRef="_41644BCA-60BB-4E8D-B9FB-2FFC6F7D81E8" sourceElement="_9EF505FE-E098-470C-8C40-00C4C6F6CAF5" targetElement="_305940D4-8174-487D-9E87-7C5A967ECB3C">
+        <di:waypoint x="640" y="200" />
+        <di:waypoint x="460" y="80" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="_933AF249-0B7D-451F-8501-9AB81CF5FD3B" dmnElementRef="_EC91E90D-0A04-40D2-B6FA-E46ADD56E2C5" sourceElement="_0B7F9821-C959-43BE-A235-D184FCEC6E9F" targetElement="_9EF505FE-E098-470C-8C40-00C4C6F6CAF5">
+        <di:waypoint x="840" y="340" />
+        <di:waypoint x="640" y="240" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
